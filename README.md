@@ -14,7 +14,7 @@ You can start by creating an Amazon S3 bucket, enabling the Amazon S3 Website ho
 **Amazon CloudFront**: You can also use Amazon CloudFront to enable your website to load quickly. Amazon CloudFront will create a content delivery network (CDN) that hosts your website content in close proximity to your users.
 
 <br/>
-<img src="Documentation/Images/S3WebsiteHosting-Architecture.PNG" alt="S3 Static Website Hosting"/>
+<img src="Images/S3WebsiteHosting-Architecture.PNG" alt="S3 Static Website Hosting"/>
 
 
 ## Advantages of Hosting Website on S3
@@ -32,7 +32,7 @@ Here are some of the advantages of hosting site on S3
 * An AWS account
 
 <br/>
-<img src="Documentation/Images/AWS-Free.PNG" alt="S3 Static Website Hosting"/>
+
 
 ## Set-Up Instructions
 
@@ -51,7 +51,7 @@ When you first create an S3 bucket, you select the AWS Region in which the files
 * Leave blank this field "Copy Settings from an existing bucket".
 
 <br/>
-<img src="Documentation/Images/Step1-CreateBucket.PNG" alt="Create Bucket"/>
+<img src="Images/Step1-CreateBucket.PNG" alt="Create Bucket"/>
 
 ### Step 2 - Upload Content of your Website
 
@@ -66,7 +66,7 @@ You can use sample Website "Website" folder contents (provided in this repositor
 * images
 
 <br/>
-<img src="Documentation/Images/Step2-UploadContents.PNG" alt="Upload Contents"/>
+<img src="Images/Step2-UploadContents.PNG" alt="Upload Contents"/>
 
 
 ### Step 3 - Add a Bucket Policy to allow Public Read Access
@@ -80,7 +80,7 @@ Uncheck Manage public bucket policies:
 * Uncheck - Block public and cross-account access if bucket has public policies (Recommended) 
 
 <br/>
-<img src="Documentation/Images/Step3-BucketPolicy-A.PNG" alt="Create Bucket Policy"/>
+<img src="Images/Step3-BucketPolicy-A.PNG" alt="Create Bucket Policy"/>
 
 Add following bucket policy. Replace [YOUR_BUCKET_NAME] with name of your bucket policy.
 
@@ -101,7 +101,7 @@ Add following bucket policy. Replace [YOUR_BUCKET_NAME] with name of your bucket
 Click 'Save' button to save changes.
 
 <br/>
-<img src="Documentation/Images/Step3-BucketPolicy-B.PNG" alt="Create Bucket Policy"/>
+<img src="Images/Step3-BucketPolicy-B.PNG" alt="Create Bucket Policy"/>
 
 ### Step 4 - Enable Website Hosting
 In order to serve assets via url, you need to enable Website Hosting
@@ -112,10 +112,10 @@ Note the endpoint.
 http://{bucket-name}.s3-website-{AWS-Region}.amazonaws.com
 
 <br/>
-<img src="Documentation/Images/Step4-A.PNG" alt="Enable Website Hosting"/>
+<img src="Images/Step4-A.PNG" alt="Enable Website Hosting"/>
 
 <br/>
-<img src="Documentation/Images/Step4-B.PNG" alt="Enable Website Hosting"/>
+<img src="Images/Step4-B.PNG" alt="Enable Website Hosting"/>
 
 ### Step 5 - Access Your Website (Testing/Validation)
 
@@ -126,7 +126,7 @@ For Example:
 <a href="http://pwdgen.s3-website-us-east-1.amazonaws.com/">http://pwdgen.s3-website-us-east-1.amazonaws.com/</a>
 
 <br/>
-<img src="Documentation/Images/SampleWebsite.PNG" alt="Sample Static Website"/>
+<img src="Images/SampleWebsite.PNG" alt="Sample Static Website"/>
 
 ## References
 
